@@ -49,7 +49,7 @@ pipeline {
       steps {
         script {
           step([$class: "RundeckNotifier",
-          rundeckInstance: "rundeck",
+          rundeckInstance: "Rundeck",
           options: """
             BUILD_VERSION=$BUILD_NUMBER
           """,
