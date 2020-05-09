@@ -3,6 +3,26 @@ package calculator;
 import java.util.*;
 public class Calculator
 {
+
+Calculator(){};
+
+public static double add(double num1, double num2){
+  return num1+num2;
+}
+
+public static double subtract(double num1, double num2){
+  return  num1-num2;
+}
+
+public static double multiply(double num1, double num2){
+  return  num1*num2;
+}
+
+// public static void divide(double num1, double num2){
+// return  num1/num2;
+// }
+
+
     public static void main(String args[])
     {
         int flag=0,ch;
@@ -35,7 +55,7 @@ public class Calculator
                 num1 = reader.nextDouble();
                 System.out.print("Enter number 2: ");
                 num2 = reader.nextDouble();
-                System.out.println(num1+num2);
+                System.out.println(add(num1, num2));
                 break;
                 case 2:
                 System.out.println("Subtraction");
@@ -44,7 +64,7 @@ public class Calculator
                 num1 = reader.nextDouble();
                 System.out.print("Enter number 2: ");
                 num2 = reader.nextDouble();
-                System.out.println(num1-num2);
+                subtract(num1, num2);
                 break;
                 case 3:
                 System.out.println("Multiplication");
@@ -53,7 +73,7 @@ public class Calculator
                 num1 = reader.nextDouble();
                 System.out.print("Enter number 2: ");
                 num2 = reader.nextDouble();
-                System.out.println(num1*num2);
+                multiply(num1, num2);
                 break;
                 // case 4:
                 // System.out.println("Division");
@@ -62,7 +82,7 @@ public class Calculator
                 // num1 = reader.nextDouble();
                 // System.out.print("Enter number 2: ");
                 // num2 = reader.nextDouble();
-                // System.out.println(num1/num2);
+                // divide(num1, num2);
                 // break;
                 default: System.out.println("Exiting program due to invalid input");
                 flag=1;
