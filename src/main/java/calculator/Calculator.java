@@ -69,7 +69,7 @@ public static double divide(double num1, double num2){
                 num1 = reader.nextDouble();
                 System.out.print("Enter number 2: ");
                 num2 = reader.nextDouble();
-                subtract(num1, num2);
+                System.out.println(subtract(num1, num2));
                 break;
                 case 3:
                 System.out.println("Multiplication");
@@ -78,7 +78,7 @@ public static double divide(double num1, double num2){
                 num1 = reader.nextDouble();
                 System.out.print("Enter number 2: ");
                 num2 = reader.nextDouble();
-                multiply(num1, num2);
+                System.out.println(multiply(num1, num2));
                 break;
                 case 4:
                 System.out.println("Division");
@@ -87,7 +87,7 @@ public static double divide(double num1, double num2){
                 num1 = reader.nextDouble();
                 System.out.print("Enter number 2: ");
                 num2 = reader.nextDouble();
-                divide(num1, num2);
+                System.out.println(divide(num1, num2));
                 break;
                 default: System.out.println("Exiting program due to invalid input");
                 flag=1;
