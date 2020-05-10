@@ -18,9 +18,14 @@ public static double multiply(double num1, double num2){
   return  num1*num2;
 }
 
-// public static void divide(double num1, double num2){
-// return  num1/num2;
-// }
+public static double divide(double num1, double num2){
+  if (num2 == 0) {
+    throw new IllegalArgumentException("Cannot divide by zero");
+  }
+  else {
+    return  num1/num2;
+  }
+}
 
 
     public static void main(String args[])
@@ -75,15 +80,15 @@ public static double multiply(double num1, double num2){
                 num2 = reader.nextDouble();
                 multiply(num1, num2);
                 break;
-                // case 4:
-                // System.out.println("Division");
-                // System.out.println("Enter two numbers");
-                // System.out.print("Enter number 1: ");
-                // num1 = reader.nextDouble();
-                // System.out.print("Enter number 2: ");
-                // num2 = reader.nextDouble();
-                // divide(num1, num2);
-                // break;
+                case 4:
+                System.out.println("Division");
+                System.out.println("Enter two numbers");
+                System.out.print("Enter number 1: ");
+                num1 = reader.nextDouble();
+                System.out.print("Enter number 2: ");
+                num2 = reader.nextDouble();
+                divide(num1, num2);
+                break;
                 default: System.out.println("Exiting program due to invalid input");
                 flag=1;
                 }
